@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: fluent-bit-config
-  namespace: logging
+  namespace: monitoring
   labels:
     k8s-app: fluent-bit
 data:
@@ -61,9 +61,9 @@ data:
     [OUTPUT]
         Name          gelf
         Match         *
-        Host          192.168.1.18
-        Port          12201
-        Mode          tcp
+        Host          192.168.119.7
+        Port          12202
+        Mode          udp
         Gelf_Short_Message_Key log
 
   parsers.conf: |
