@@ -56,8 +56,8 @@ spec:
         hostPath:
           path: /mnt
       serviceAccountName: fluent-bit
-      tolerations:
-      - key: node-role.kubernetes.io/master
-        operator: Exists
-        effect: NoSchedule
+      # tolerations:
+      # - key: node-role.kubernetes.io/master
+      #   operator: Exists
+      #   effect: NoSchedule
 
