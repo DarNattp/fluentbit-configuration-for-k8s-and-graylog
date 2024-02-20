@@ -7,6 +7,6 @@ Fluent Bit collects only Docker logs, gets K8s metadata, builds a GEF message
 and sends it to a Graylog server.
 
 * Update the **fluent-bit-configmap.yaml** file.
-  Replace **192.168.119.17** and port with the IP address and port of your Graylog server.
+  Replace **192.168.119.7** and port with the IP address and port of your Graylog server.
 * Then execute the **deploy.sh** script.
 
